@@ -73,11 +73,13 @@ class ViewController: UIViewController {
         navigationController?.navigationBar.backgroundColor = Constants.redColor
         extendedLayoutIncludesOpaqueBars = true
         navigationItem.leftBarButtonItem?.title = ""
-        navigationItem.searchController = searchController
-        searchController.hidesNavigationBarDuringPresentation = true
-        searchController.obscuresBackgroundDuringPresentation = false
-
+        
         if #available(iOS 13.0, *) {
+            
+            navigationItem.searchController = searchController
+                 searchController.hidesNavigationBarDuringPresentation = true
+                 searchController.obscuresBackgroundDuringPresentation = false
+            
             let navBarAppearance = UINavigationBarAppearance()
             navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.white, NSAttributedString.Key.font : UIFont.systemFont(ofSize: 21.0)]
             navBarAppearance.backgroundColor = Constants.redColor
