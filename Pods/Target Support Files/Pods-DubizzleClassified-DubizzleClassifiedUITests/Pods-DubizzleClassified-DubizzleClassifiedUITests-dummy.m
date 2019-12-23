@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_DubizzleClassified_DubizzleClassifiedUITests : NSObject
+@end
+@implementation PodsDummy_Pods_DubizzleClassified_DubizzleClassifiedUITests
+@end

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ClassifiedItemTableViewCell" rowHeight="150" id="WwZ-2Q-82c" customClass="ClassifiedItemTableViewCell" customModule="DubizzleClassified" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WwZ-2Q-82c" id="mKm-qC-fzC">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JBs-WN-i5m" customClass="ClassifiedItemView" customModule="DubizzleClassified" customModuleProvider="target">
+                        <rect key="frame" x="7" y="2.5" width="400" height="145"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="JBs-WN-i5m" secondAttribute="bottom" constant="2.5" id="COo-4Y-zTe"/>
+                    <constraint firstItem="JBs-WN-i5m" firstAttribute="leading" secondItem="mKm-qC-fzC" secondAttribute="leading" constant="7" id="DZN-EP-Xci"/>
+                    <constraint firstAttribute="trailing" secondItem="JBs-WN-i5m" secondAttribute="trailing" constant="7" id="SaE-bo-CT2"/>
+                    <constraint firstItem="JBs-WN-i5m" firstAttribute="top" secondItem="mKm-qC-fzC" secondAttribute="top" constant="2.5" id="sqK-fP-lh8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="classifiedItemView" destination="JBs-WN-i5m" id="zCa-12-lSn"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="3.3482142857142856"/>
+        </tableViewCell>
+    </objects>
+</document>
